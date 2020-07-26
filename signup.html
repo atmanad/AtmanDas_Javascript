@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Signup Template</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+  <div class="container bg-white h-100 p-0">
+    <button class="btn btn-block btn-info mb-2 font-weight-bold" id="header" disabled><i class="fas fa-graduation-cap float-left"></i> Sign up <i class="fas fa-times float-right"></i></button>
+
+    <form class="form">
+      <span class="text-danger float-left mb-2" id="error"></span>
+      <div class="input-group input-group-lg border mb-3">
+        <input type="text" id="name" class="form-control border-0" placeholder="full name">
+        <i class="fas fa-user icon text-black-50"></i>
+      </div>
+      <div class="input-group input-group-lg mb-3 border border-grey">
+        <input type="email" id="email" class="form-control border-0" placeholder="mail@example.com" required>
+        <i class="fas fa-envelope icon text-black-50"></i>
+      </div>
+      <div class="input-group input-group-lg border mb-3">
+        <input type="number" id="mobile" class="form-control border-0" placeholder="mobile">
+        <i class="fas fa-mobile icon text-black-50"></i>
+      </div>
+      <div class="input-group input-group-lg border mb-3">
+        <input type="text" id="uname" class="form-control border-0" placeholder="username">
+        <i class="fas fa-user-circle icon text-black-50"></i>
+      </div>
+      <div class="input-group input-group-lg border">
+        <input type="password" id="passwd" class="form-control border-0" placeholder="password">
+        <i class="fas fa-unlock icon text-black-50"></i>
+      </div>
+      <small>minimum 8 characters long, an uppercase, a lowercase, a special character, and a number</small>
+
+      <button class="btn btn-info form-control mb-2 mt-4" id="signup">SIGN UP</button>
+
+      <div class="d-flex justify-content-end">
+        <span>Have account!&nbsp;</span><a href="signin.html" class="text-decoration-none text-primary">Sign in</a>
+      </div>
+      <div class="d-flex justify-content-around my-3">
+        <div class="line mt-3"></div>
+        <p class="text-center">OR</p>
+        <div class="line mt-3"></div>
+      </div>
+      <button class="btn btn-fb btn-block mb-4"><i class="fab fa-facebook-f text-white"></i></button>
+      <button class="btn btn-g btn-block mb-3"><i class="fab fa-google-plus-g text-white"></i></button>
+    </form>
+  </div>
+  <script src="assets/js/signup.js"></script>
+</body>
+
+</html>

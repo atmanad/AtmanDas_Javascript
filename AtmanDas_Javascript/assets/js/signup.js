@@ -12,6 +12,7 @@ $('#signup').click(function (e) {
     var specialChar = /[\s~`!@#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?()\._]/.test(passWd);
 
     var validEmail = checkEmail();
+	
     function checkEmail() {
         if (email.trim() === '')
             return false;
@@ -19,14 +20,9 @@ $('#signup').click(function (e) {
             return false;
         if (email.charAt(email.length - 4) != '.' && email.charAt(email.length - 3) != '.')
             return false;
-
         return true;
     }
-    console.log(email.charAt(email.length - 4));
-    console.log(email.charAt(email.length - 3));
-    console.log(email.indexOf('@'));
-    console.log(validEmail);
-
+	
     if (fName != '' && validName) {
         if (validEmail) {
             if (mobile.toString().length === 10) {
